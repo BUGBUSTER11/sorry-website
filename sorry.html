@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I’m Sorry 🐻</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <h1>I’m Really Sorry 🥺💖</h1>
+
+    <p>
+      You’re not just my friend.<br>
+      You’re my comfort person,<br>
+      my laughter partner,<br>
+      and someone I truly care about 🫶
+    </p>
+
+    <p class="small">
+      Not telling you was my mistake.<br>
+      You deserved honesty — always.
+    </p>
+
+    <h2>Promise Time ✋🐻</h2>
+
+    <ul>
+      <li>No disappearing acts 🚫</li>
+      <li>No bad communication 🙅‍♀️</li>
+      <li>Only honesty & annoying updates 😌✨</li>
+    </ul>
+
+    <p class="final">
+      If you’re smiling even a little…<br>
+      my mission is successful 😄💗
+    </p>
+
+    <h2>Decision Time 😬</h2>
+
+<p>Are you forgiving me?</p>
+
+<div class="buttons">
+  <button id="yesBtn">Okay fine 🙄💖</button>
+  <button id="noBtn">No 😠</button>
+</div>
+
+<p id="result"></p>
+
+<script>
+  const noBtn = document.getElementById("noBtn");
+  const yesBtn = document.getElementById("yesBtn");
+  const result = document.getElementById("result");
+
+  noBtn.addEventListener("mouseover", () => {
+    const x = Math.random() * 200 - 100;
+    const y = Math.random() * 200 - 100;
+    noBtn.style.transform = `translate(${x}px, ${y}px)`;
+  });
+
+  yesBtn.addEventListener("click", () => {
+    result.innerHTML = "YAY 😄💗 I knew it! Thank you for forgiving me 🐻✨";
+  });
+</script>
+
+  </div>
+
+</body>
+</html>
